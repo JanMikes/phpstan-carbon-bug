@@ -16,6 +16,22 @@ Result is extremely slow:
 16.950 total
 ```
 
+-----
+
+Class using Carbon (simple example):
+```shell
+time vendor/bin/phpstan analyse --debug src/ClassUsingCarbonSimple.php
+```
+Result is extremely slow:
+```
+10.42s user
+0.12s system
+98% cpu
+10.692 total
+```
+
+-----
+
 Compared to class using DateTimeImmutable:
 ```shell
 time vendor/bin/phpstan analyse --debug src/ClassUsingDateTime.php
